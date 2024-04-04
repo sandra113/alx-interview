@@ -8,8 +8,6 @@ def validUTF8(data):
     for byte in data:
         # Check if this byte is a continuation byte (starts with '10')
         if bytes_to_follow > 0:
-            # If the byte does not start with '10',
-            # it's an invalid continuation byte
             if (byte >> 6) != 0b10:
                 return False
             bytes_to_follow -= 1

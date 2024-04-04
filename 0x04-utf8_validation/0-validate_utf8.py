@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 def validUTF8(data):
     # Variable to track the number of bytes expected for the next character
     bytes_to_follow = 0
